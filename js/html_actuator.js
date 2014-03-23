@@ -62,7 +62,14 @@ HTMLActuator.prototype.addTile = function (tile) {
   this.applyClasses(wrapper, classes);
 
   inner.classList.add("tile-inner");
-  inner.textContent = tile.value;
+
+  var image = document.location.search.match(''+tile.value+'=(.+?)(&|$)');
+
+  if(typeof image == "object" && image != null && typeof image[1] == "string") {
+    inner.innerHTML = '<img src="'+image[1]+'" style="width:100%;" />';
+  } else {
+    inner.textContent = tile.value;
+  }
 
   if (tile.previousPosition) {
     // Make sure that the tile gets rendered in the previous position first
