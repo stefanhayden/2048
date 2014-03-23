@@ -30,7 +30,6 @@
     </div>
 
     <div class="above-game">
-      <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
       <a class="restart-button">New Game</a>
     </div>
 
@@ -81,31 +80,94 @@
     </p>
     <hr>
     <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
+    Modified by <a href="https://twitter.com/StefanHayden">Stefan Hayden</a>. Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
     </p>
+
     <hr>
-    <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
-    </p>
-    <div class="sharing">
-      <a href="https://twitter.com/share" class="twitter-share-button" data-text="Check out 2048, a game where you join numbers to score high! #2048game" data-via="gabrielecirulli" data-url="http://git.io/2048" data-counturl="http://gabrielecirulli.github.io/2048/">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-      <form class="pp-donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="NVNPJLTBZ8AME">
-        <button name="submit"><img src="meta/icon_pp.svg">Donate</button>
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-      </form>
+    <style type="text/css">
+    .image-form table {
+      width:100%;
+    }
+    .image-form table th {
+      width:10%;
+    }
+    .image-form [type=text] {
+      width:100%;
+    }
+    .image-form .image-preview {
+      width:50px;
+    }
+    .image-form .image-preview img {
+      width:50px;
+    }
+    </style>
+    <form class="image-form">
+      <strong class="important">Set or change images for each block:</strong>
+      <table>
+        <tr class="num2">
+          <th align="right">2</th>
+          <td class="image-preview"><img src="" ></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="num4">
+          <th align="right">4</th>
+          <td class="image-preview"><img src="" ></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="num8">
+          <th align="right">8</th>
+          <td class="image-preview"><img src="" ></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="num16">
+          <th align="right">16</th>
+          <td class="image-preview"><img src="" ></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="num32">
+          <th align="right">32</th>
+          <td class="image-preview"><img src="" ></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="num64">
+          <th align="right">64</th>
+          <td class="image-preview"><img src="" ></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="num128">
+          <th align="right">128</th>
+          <td class="image-preview"><img src="" ></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="num256">
+          <th align="right">256</th>
+          <td class="image-preview"><img src="" ></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="num512">
+          <th align="right">512</th>
+          <td class="image-preview"><img src="" ></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="num1024">
+          <th align="right">1024</th>
+          <td class="image-preview"><img src="" ></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr class="num2048">
+          <th align="right">2048</th>
+          <td class="image-preview"><img src="" ></td>
+          <td><input type="text"></td>
+        </tr>
+        <tr>
+          <th align="right">&nbsp;</th>
+          <td><button>Save</button></td>
+        </tr>
+      </table>
+      
+    </form>
 
-      <span class="btc-donate">
-        <a href="bitcoin:1Ec6onfsQmoP9kkL3zkpB6c5sA4PVcXU2i">
-          <img src="meta/icon_bitcoin.svg">Donate BTC
-        </a>
-        <span class="address"><code>1Ec6onfsQmoP9kkL3zkpB6c5sA4PVcXU2i</code></span>
-      </span>
-
-    </div>
   </div>
 
   <script src="js/animframe_polyfill.js"></script>
