@@ -66,7 +66,27 @@ HTMLActuator.prototype.addTile = function (tile) {
   var image = document.location.search.match(''+tile.value+'=(.+?)(&|$)');
 
   if(typeof image == "object" && image != null && typeof image[1] == "string") {
-    inner.innerHTML = '<img src="'+image[1]+'" style="width:100%;" />';
+    var img = document.createElement("img");
+    img.src = image[1];
+
+    img.addEventListener("load", function (event) {
+      
+      if(this.width > this.height) {
+        this.style.height = "107px";
+      } else {
+        this.style.width = "107px";
+      }
+
+      if(this.width > 107) {
+        this.style.marginLeft = "-" + ((this.width - 107) / 2) + "px"
+      }
+      if(this.height > 107) {
+        this.style.marginTop = "-" + ((this.height - 107) / 2) + "px"
+      }
+
+    })
+
+    inner.appendChild(img);
   } else {
     inner.textContent = tile.value;
   }
