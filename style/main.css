@@ -309,6 +309,7 @@ hr {
   transition-property: transform; }
   .tile .tile-inner {
     border-radius: 3px;
+    overflow: hidden;
     background: #eee4da;
     text-align: center;
     font-weight: bold;
